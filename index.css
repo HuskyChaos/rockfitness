@@ -166,6 +166,10 @@ nav .menu a:hover {
   align-items: center;
 }
 
+.gallery .images img {
+  width: 85%;
+}
+
 .gallery button {
   padding: 1%;
   height: 70px;
