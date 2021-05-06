@@ -173,6 +173,7 @@ nav .menu a:hover {
 .gallery button {
   padding: 1%;
   height: 70px;
+  font-size: 1vw;
 }
 
 .gallery .dots {
