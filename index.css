@@ -13,9 +13,14 @@ p,a {
   text-align: center;
 }
 
-body {
+button {
+  border: none;
+}
+
+html,body {
   color: white;
   font-family: 'Audiowide', cursive;
+  scroll-behavior: smooth;
 }
 
 .highlight {
@@ -137,7 +142,6 @@ nav .menu a:hover {
 
 .why-us .boxes .box img {
   width: 40%;
-  height: 45%;
 }
 
 .why-us .boxes .box p {
@@ -146,6 +150,33 @@ nav .menu a:hover {
   font-size: 1.2vw;
 }
 
+.gallery {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 0;
+  background: rgba(10, 10, 10, 0.932);
+}
+
+.gallery .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery button {
+  padding: 1%;
+  height: 70px;
+}
+
+.gallery .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
 .join-soon {
   display: flex;
   width: 100%;

@@ -11,7 +11,20 @@
   <script>
     $(document).ready(function () {
       
-      
+      $('#gallery').click(function () {
+        $('.why-us').css('display','none');
+        $('.gallery').css('display','flex');
+        $('#gallery').addClass('active');
+        $('#home').removeClass('active');
+      });
+
+      $('#home').click(function () {
+        $('.why-us').css('display','flex');
+        $('#home').addClass('active');
+        $('#gallery').removeClass('active');
+        $('.gallery').css('display','none');
+
+      });
 
     });
   </script>
@@ -24,15 +37,29 @@
       <h1><span class="highlight">ROCK</span> FITNESS</h1>
     </div>
     <div class="menu">
-      <a href="" class="active">Home</a>
-      <a href="">Gallery</a>
-      <a href="">About</a>
+      <a id="home" class="active">Home</a>
+      <a id="gallery">Gallery</a>
+      <a href="#contact">About</a>
     </div>
   </nav>
 
   <div class="face">
     <h1>BE <span class="highlight">STRONG</span><br>TRAIN HARD</h1>
     <p>PAIN IS JUST WEAKNESS LEAVING YOUR BODY</p>
+  </div>
+
+
+  <div class="gallery">
+    <div class="images">
+      <button>next</button>
+      <img src="./Gym2/1.png" alt="">
+      <!-- <img src="./Gym2/2.png" alt=""> -->
+      <button>prev</button>
+    </div>
+    <div class="dots">
+      <p>dot</p>
+    </div>
+
   </div>
   
   <div class="why-us">
@@ -59,7 +86,7 @@
     </div>
   </div>
 
-  <div class="join-soon">
+  <div class="join-soon" id="contact">
     <h1>Join Soon</h1>
     <h1><span class="highlight">THE CLOCK</span> IS TICKING...></h1>
     <div class="boxes">
