@@ -44,10 +44,13 @@
 
       let bName = navigator.appVersion;
       bName = bName.split(' ');
-      bName = bName[11];
+      bName = bName[bName.length-2];
+
+      console.log(navigator.appVersion);
+      console.log(bName);
 
       if (bName.indexOf('Chrome') > -1) {
-        console.log('Chrome Browser');
+        console.log('Chrome');
       }
       else {
         $('.why-us .boxes .box img').css({
