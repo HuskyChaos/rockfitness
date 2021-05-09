@@ -13,18 +13,47 @@
       
       $('#gallery').click(function () {
         $('.why-us').css('display','none');
+        $('.why-us .boxes').css('opacity','0');
         $('.gallery').css('display','flex');
+        $('.gallery .images, .gallery .dots').animate({opacity: '1'},2500);
         $('#gallery').addClass('active');
         $('#home').removeClass('active');
       });
 
       $('#home').click(function () {
+        $('.gallery').css('display','none');
         $('.why-us').css('display','flex');
+        $('.why-us .boxes').animate({opacity: '1'},2500);
         $('#home').addClass('active');
         $('#gallery').removeClass('active');
-        $('.gallery').css('display','none');
 
       });
+
+      $(document).scroll(function () {
+        
+        if(($('.why-us').offset().top) - window.scrollY <= (window.outerHeight / 2)) {
+            $('.why-us .boxes .box').animate({opacity: '1'},2900);
+          }
+
+        if(($('.join-soon').offset().top) - window.scrollY <= (window.outerHeight / 2)) {
+            $('.join-soon .boxes .box').animate({opacity: '1'},2900);
+          }
+
+      });
+
+      let bName = navigator.appVersion;
+      bName = bName.split(' ');
+      bName = bName[11];
+
+      if (bName.indexOf('Chrome') > -1) {
+        console.log('Chrome Browser');
+      }
+      else {
+        $('.why-us .boxes .box img').css({
+          width: '45%',
+          height: '45%'
+        });
+      }
 
     });
   </script>
