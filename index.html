@@ -52,11 +52,16 @@
       if (bName.indexOf('Chrome') > -1) {
         console.log('Chrome');
       }
+
+      else if (bName.indexOf('Mozilla') > -1) {
+        console.log('Mozilla');
+      }
       else {
         $('.why-us .boxes .box img').css({
           width: '45%',
           height: '45%'
         });
+        console.log('Safari');
       }
 
     });
