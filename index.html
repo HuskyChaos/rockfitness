@@ -22,6 +22,7 @@
 
       $('#home').click(function () {
         $('.gallery').css('display','none');
+        $('.gallery .images, .gallery .images').css('opacity','0');
         $('.why-us').css('display','flex');
         $('.why-us .boxes').animate({opacity: '1'},2500);
         $('#home').addClass('active');
