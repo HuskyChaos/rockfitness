@@ -42,27 +42,24 @@
 
       });
 
-      let bName = navigator.appVersion;
-      bName = bName.split(' ');
-      bName = bName[bName.length-2];
+      let bName = navigator.userAgent;
 
-      console.log(navigator.appVersion);
+      console.log(navigator.userAgent);
       console.log(bName);
 
-      if (bName.indexOf('Chrome') > -1) {
-        console.log('Chrome');
+      if (bName.indexOf('Macintosh') > -1){
+        console.log('Macintosh Device');
+
+        bName = bName.split(' ');
+        bName = bName[bName.length-2];
+        console.log(bName);
+        
       }
 
-      else if (bName.indexOf('Mozilla') > -1) {
-        console.log('Mozilla');
+      else if (bName.indexOf('Windows') > -1) {
+        console.log('Windows Device');
       }
-      else {
-        $('.why-us .boxes .box img').css({
-          width: '45%',
-          height: '45%'
-        });
-        console.log('Safari');
-      }
+
 
     });
   </script>
@@ -89,10 +86,10 @@
 
   <div class="gallery">
     <div class="images">
-      <button>next</button>
+      <button>&#60;</button>
       <img src="./Gym2/1.png" alt="">
-      <!-- <img src="./Gym2/2.png" alt=""> -->
-      <button>prev</button>
+      <img src="./Gym2/2.png" alt="">
+      <button>&#62;</button>
     </div>
     <div class="dots">
       <p>dot</p>
