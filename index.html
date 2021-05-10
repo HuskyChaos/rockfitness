@@ -14,8 +14,8 @@
       $('#gallery').click(function () {
         $('.why-us').css('display','none');
         $('.why-us .boxes').css('opacity','0');
-        $('.gallery').css('display','flex');
         $('.gallery .images, .gallery .dots').animate({opacity: '1'},2500);
+        $('.gallery').css('display','flex');
         $('#gallery').addClass('active');
         $('#home').removeClass('active');
       });
@@ -23,11 +23,10 @@
       $('#home').click(function () {
         $('.gallery').css('display','none');
         $('.gallery .images, .gallery .images').css('opacity','0');
-        $('.why-us').css('display','flex');
         $('.why-us .boxes').animate({opacity: '1'},2500);
+        $('.why-us').css('display','flex');
         $('#home').addClass('active');
         $('#gallery').removeClass('active');
-
       });
 
       $(document).scroll(function () {
@@ -95,13 +94,12 @@
 
   <div class="gallery">
     <div class="images">
-      <button>&#60;</button>
+      <button class="prev">&#10094;</button>
       <img src="./Gym2/1.png" alt="">
-      <img src="./Gym2/2.png" alt="">
-      <button>&#62;</button>
+      <button class="next">&#10095;</button>
     </div>
     <div class="dots">
-      <p>dot</p>
+      
     </div>
 
   </div>

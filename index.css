@@ -168,6 +168,10 @@ nav .menu a:hover {
   align-items: center;
 }
 
+.gallery .images :nth-child(2) {
+  display: block;
+}
+
 .gallery .images img {
   width: 85%;
 }
@@ -176,6 +180,9 @@ nav .menu a:hover {
   padding: 1%;
   height: 70px;
   font-size: 1vw;
+  color: white;
+  background: rgba(0, 0, 0, 0.616);
+  cursor: pointer;
 }
 
 .gallery .dots {
